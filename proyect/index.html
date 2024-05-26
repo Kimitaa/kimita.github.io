@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Principal</title>
+    
+    <style>
+
+.quejas{background-color: #ff0000;  border-color: rgba(255, 255, 255, 0.637);}
+.quejas:hover{background-color: #000000;  border-color: rgb(0, 0, 0);}
+
+button{color: #000000;}
+
+
+.contenedor{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.contenedor a{
+    font-size: 50px;
+    transition: all ease 300ms;
+}
+.contenedor a:hover{
+    transform: scale(1.2);
+}
+.facebook{
+    color: blue;
+    cursor:grabbing;
+}
+.whatsapp{
+    color: green;
+    cursor: grabbing;
+
+}
+
+.instagram{
+    color: rgb(255, 153, 0);
+    cursor: grabbing;
+}
+
+.ubicacion{
+    color: rgb(215, 114, 255);
+    cursor: grabbing;
+}
+
+html{scroll-behavior: smooth;}
+
+.item{scroll-margin-top: 5ex;}
+
+
+button {
+    border-radius: 5px; 
+    padding: 5px; 
+    cursor:grabbing;
+
+}
+header{
+    position:fixed;
+    padding: 10px;
+}
+
+body{
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("hm.jpg");
+    background-attachment: fixed;
+    background-position: 50%;
+    cursor: grab;
+}
+
+.btn1{
+    border: none;
+    color: white;
+    padding: 7px 14px;
+    cursor: grabbing;
+    border-radius: 5px;
+    background-color: #252525a4;
+    box-shadow:0.3s ease-in-out ;
+    transition: all ease 300ms;
+
+}
+
+.btn1:hover{
+    box-shadow: 8px 10px 16px rgba(255, 255, 255, 0.322);
+    transform: scale(1.1);
+
+}
+
+.a{
+    font-size: 55px;
+    font-weight: bold;
+    font-family: 'Oswald', sans-serif;
+    margin: 5px 0;
+    text-transform: uppercase;
+    animation: color-change 5s infinite alternate; /* Animación de cambio de color */
+}
+.b{
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Oswald', sans-serif;
+    margin: 5px 0;
+    text-transform: uppercase;
+    animation: color-change 5s infinite alternate; /* Animación de cambio de color */
+}
+@keyframes color-change {
+    0% {color: #fb0000; /* Color inicial */}
+    25%{color:rgb(255, 238, 0);}
+    50% {color: #47ffa3; /* Color intermedio */}
+    75%{color:rgb(17, 0, 255);}
+    100% {color: #d100c7; /* Color final */}
+}
+.c{
+    font-size: large;
+    font-family:cursive;
+
+}
+
+div{color:white;font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;}
+
+#tham{background-color: #00000071;}
+
+#tbp{background-color: #00000071;}
+
+#informes{background-color: #000000c2;}
+
+.inf{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+}
+
+.descripcion{
+    padding: 70px;
+}
+
+.Burguer{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 50px;
+    color: white;
+}
+
+.bg{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    color: lightgray;
+}
+
+.frase{
+    font-family:monospace;
+    font-size:20px;
+}
+
+
+    </style>
+</head>
+<body bgcolor="#000000" background="hm.jpg">
+<header>
+     <nav>
+        <div class="btns">
+
+            &nbsp;<a href="#"><button class="btn1">Inicio</button></a>&nbsp;&nbsp;&nbsp;             
+
+            <a href="#bham"><button class="btn1">Burguers</button></a>&nbsp;&nbsp;&nbsp;
+
+            <a href="#tbps"><button class="btn1">Bebidas</button></a>&nbsp;&nbsp;&nbsp;
+
+            <a href="#informes"><button class="btn1">Contacto</button></a>&nbsp;&nbsp;&nbsp;
+
+        </div>
+    </nav> 
+</header>
+
+<br><br><br>
+<center>
+    <div>
+        <table border="0" id="inicio">
+            <tr>
+                <td>
+                    <div class="a">Mc Burguer's</div>
+                </td>
+                <td><br>
+                    <div class="b">S.A. DE C.V.</div>
+                </td>
+            </tr>
+        </table>
+    </div>
+</center>
+<br><br><br>
+    <div class="descripcion">
+       <font color="white"><p class="c">Todos los dias utilizamos productos frescos y de una excelente <br>
+       calidad para asi  satisfacer sus paladares en cada  bocado.</p></font>
+    </div>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>   
+
+<center>
+<div id="bham" class="Burguer">
+    Hamburguesas
+</div>
+<div class="bg">
+    hamburguesas caseras con Carne 100% de res.
+</div>
+</center>
+
+<br><br><br><br>
+
+    <div align="center" class="hamburguesas" >
+        <table border="0" width="1000" id="tham">
+    
+            <tr>
+                <td><div align="right"><div class="c">Sin papas</div>carne, queso, lechuga, tomate, pepinillos, cebolla, mostaza, mayonesa</div></td>  <td><div align="center"><img src="hamburguesa.jpg" width="150" height="150"></div></td>  <td><div align="right"><div class="c">Tradicional</div>carne, queso, lechuga, tomate, pepinillos, cebolla, mostaza, mayonesa, papas</div></td>  <td><div align="center"><img src="con papas.jpeg" width="150" height="150"></div></td>  <td><div align="right"><div class="c">Tradicional Doble</div> doble carne, queso, lechuga, tomate, pepinillos, cebolla, mostaza, mayonesa, papas</div></td>  <td><div align="center"><img src="doble.avif" width="150" height="150"></div></td>
+            </tr>
+    
+            <tr>
+                <td><div align="center"><img src="doble queso.jpg" width="150" height="150"></div></td>  <td><div><div class="c">Cheese Burguer</div>carne, doble queso, lechuga, tomate, pepinillos, cebolla, mostaza, mayonesa, papas </div></td>  <td><div align="center"><img src="ninos.webp"width="150" height="150"></div></td>  <td><div><div class="c">Ni&ntilde;os</div>carne, queso, lechuga, tomate, pepinillos, cebolla, mostaza, mayonesa, papas</div></td>  <td><div align="center"><img src="pollo.avif"width="150" height="150"></div></td>  <td><div><div class="c">Chicken</div>pechuga de pollo empanizada, queso, lechuga, tomate, cebolla, mostaza, mayonesa, papas</div></td>
+            </tr>
+    
+            <tr>
+                <td><div align="right"><div class="c">Doble Cheese Burguer</div>doble carne, doble queso, lechuga, tomate, pepinillos, cebolla, mostaza, mayonesa, papas</div></td>  <td><div align="center"><img src="dobledoble.png"width="150" height="150"></div></td>  <td><div align="right"><div class="c">Rodeo</div>arne vacuno, doble queso, lechuga, tomate, huevo frito, cebolla salteada, mostaza, mayonesa, papas</div></td>  <td><div align="center"><img src="rodeo.jpg" width="150" height="150"></div></td>  <td><div align="right"><div class="c">Flaming Hot Burguer</div> pechuga de pollo empanizada en cheetos Flaming hot, queso, mostaza, mayonesa, papas</div></td>  <td><div align="center"><img src="flaming.jpeg" width="150" height="150"></div></div></td>
+            </tr>
+
+            <tr>
+                <td><div align="center"><img src="bongles.jpg" width="150" height="150"></div></td>  <td><div><div class="c">Boneless</div>Salsa BBQ, Salsa B&uacute;falo, Mango Habanero</div></td>  <td><div align="center"><img src="alitas.jpg"width="150" height="150"></div></td>  <td><div><div class="c">Alitas</div>Salsa BBQ, Salsa B&uacute;alo, Mango Habanero</div></td>  <td><div align="center"><img src="aros.jpg"width="150" height="150"></div></td>  <td><div><div class="c">Aros de Cebolla</div></td>
+            </tr>
+    
+        </table>
+    </div>
+
+<br><br><br><br><br><br><br><br><br><br><br>
+<table bgcolor="DeepPink" align="center" class="frase">
+    <tr>
+        <td>
+            La vida no es para llevar, es para comer aqui 🤍
+        </td>
+    </tr>
+</table>
+<br><br><br><br><br><br><br><br><br><br><br>
+
+<center>
+    <div id="tbps" class="Burguer">
+        Bebidas y Postres
+    </div>
+    <div class="bg">
+        Las mejores bebidas y postres de la ciudad.
+    </div>
+</center>
+
+<br><br><br><br>
+
+<div align="center" class="hamburguesas">
+    <table border="0" width="1000" id="tbp">
+    
+            <tr>
+                <td><div align="right"><div class="c">Soda cola</div></td>  <td><div align="center"><img src="soda.jpeg" width="150" height="150"></div></td>  <td><div align="right"><div class="c">Caf&eacute; fr&iacute;o</div></td>  <td><div align="center"><img src="frio.jpeg" width="150" height="150"></div></td>  <td><div align="right"><div class="c">Caf&eacute; Caliente</div></td>  <td><div align="center"><img src="caliente.jpeg" width="150" height="150"></div></td>
+            </tr>
+    
+            <tr>
+                <td><div align="center"><img src="Malteadas.webp" width="180" height="150"></div></td>  <td><div><div class="c">Malteadas</div>Chocolate, Fresa, Vainilla</div></td>  <td><div align="center"><img src="limonada.png"width="150" height="150"></div></td>  <td><div><div class="c">Limonada Natural</div></td>  <td><div align="center"><img src="limorosa.jpg"width="150" height="150"></div></td>  <td><div><div class="c">Limonada Rosa</div></td>
+            </tr>
+    
+            <tr>
+                <td><div align="right"><div class="c">T&eacute; Verde </div></td>  <td><div align="center"><img src="te verde.jpg"width="150" height="150"></div></td>  <td><div align="right"><div class="c">T&eacute; Jazm&iacute;n</div></td>  <td><div align="center"><img src="jazmin.png" width="150" height="150"></div></td>  <td><div align="right"><div class="c">Helado ch</div></td>  <td><div align="center"><img src="con.jpg" width="150" height="150"></div></div></td>
+            </tr>
+
+            <tr>
+                <td><div align="center"><img src="cono.jpg" width="150" height="150"></div></td>  <td><div><div class="c">Helado G</div></td>  <td><div align="center"><img src="pastel.jpg"width="170" height="150"></div></td>  <td><div><div class="c">Rebanada de Pastel</div><div>Chocolate, Vainilla, Fresa, Red Velvet,Chocoplatano, Caramelo Salado </div></td>  <td><div align="center"><img src="pay.jpeg"width="150" height="150"></div></td>  <td><div><div class="c">Rebanada de Pay</div><div>Queso cherry, Nuez, Queso Almendras</div></td>
+            </tr>
+    
+    </table>
+</div>
+
+<br><br><br><br><br>><br><br>
+<div class="item" id="informes">
+<br><br><br>
+
+<div align="center" class="inf">
+    <font color="white"><blockquote>A continuación puedes revisar nuestra<br> ubicaci&oacute;n asi como nuestras redes sociales</blockquote></font>
+</div>
+
+<br><br><br>
+
+    <div class="contenedor" >
+        <a href="https://www.facebook.com/kimberly.saenz.1654?mibextid=ZbWKwL" class="facebook" target="_blank">
+            <i class="fa-brands fa-facebook"></i>
+        </a>
+
+        <a href="https://wa.me/6331198809" class="whatsapp" target="_blank">
+            <i class="fa-brands fa-whatsapp"></i>
+        </a>
+
+        <a href="https://www.instagram.com/kimberly_s_h_?igsh=ZzZjZ3RrcTU0Nzl1" class="instagram" target="_blank">
+            <i class="fa-brands fa-instagram" ></i>
+        </a> 
+                
+        <a href="https://maps.app.goo.gl/Yz5bL8nGwFXmP2qr9" class="ubicacion" target="_blank">
+            <i class="bi bi-alarm"></i>        </a>
+    </div>
+
+<br><br><br>
+
+<div align="right">
+    <a href="quejas y sugerencias.html"><button class="btn quejas"><font color="white"><b> Quejas y sugerencias</b></font></button></a>
+</div>
+
+</div>
+</body>
+</html>
